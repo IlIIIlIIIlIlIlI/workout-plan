@@ -1,7 +1,12 @@
 import React from 'react';
+import AbsAndCardio from './AbsAndCardio';
 
 function App() {
-  return <div>suraj</div>;
+  return (
+    <div>
+      <AbsAndCardio />
+    </div>
+  );
 }
 
 export default App;
