@@ -5,10 +5,20 @@
   justify-content: center;
 }
 
-.date {
+.date,
+.date1,
+.date2 {
   margin-top: 40px;
   font-size: 20px;
   color: blueviolet;
+}
+
+.date2 {
+  margin-top: 10px;
+}
+
+.date1 {
+  color: rgb(5, 78, 54);
 }
 
 li {

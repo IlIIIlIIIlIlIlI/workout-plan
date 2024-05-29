@@ -4,7 +4,7 @@ import './AbsAndCardio.css';
 function AbsAndCardio() {
   return (
     <div className='main'>
-      <div className='date'>Since 1st January 2024</div>
+      <div className='date1'>Since 1st January 2024</div>
       <div className='date'>Abs And Cardio</div>
       <ol>
         <li>Warm-Up</li>
