@@ -12,7 +12,7 @@ function Legs() {
 
       <ol>
         <li>Barbell Squats - 14 || 15 x 3</li>
-        <li>Standing Lunges - 14 || 16 x 2</li>
+        <li>Standing Lunges - 14 || 20 x 2</li>
         <li>Walking Lunges - 14 || 16 x 1</li>
       </ol>
 

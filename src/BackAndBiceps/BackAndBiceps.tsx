@@ -17,7 +17,15 @@ function BackAndBiceps() {
       </ol>
 
       <ol>
-        <li>Shrugs - 12 || 16 x 3</li>
+        <li>Shrugs - 12 || 20 x 3</li>
+      </ol>
+
+      <ol>
+        <li>Rear Delt row - 12 || 15 x 3</li>
+      </ol>
+
+      <ol>
+        <li>Back Extention / Good Morning - 12 || 15 x 3</li>
       </ol>
 
       <ol>
