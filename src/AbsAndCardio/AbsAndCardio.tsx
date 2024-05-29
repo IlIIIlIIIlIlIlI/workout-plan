@@ -22,13 +22,13 @@ function AbsAndCardio() {
       </ol>
 
       <ol>
-        <li>Crunches(Situps) - 15||20 x 2</li>
-        <li>Twisting Crunches(Crunches) - 15||20 x 2</li>
+        <li>Crunches(Situps) - 15||20 x 3</li>
+        <li>Twisting Crunches(Crunches) - 15||20 x 3</li>
       </ol>
 
       <ol>
         <li>Matt Bycle Crunches - 50 x 1</li>
-        <li>Leg Resist - 12||15 x 2</li>
+        <li>Leg Resist - 12||15 x 3</li>
       </ol>
 
       <ol>
