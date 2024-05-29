@@ -32,6 +32,7 @@ function Legs() {
       </ol>
 
       <ol>
+        <li>Sleeping Pullover - 12 x 1</li>
         <li>Stretching</li>
       </ol>
     </div>

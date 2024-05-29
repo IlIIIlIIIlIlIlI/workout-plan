@@ -32,6 +32,7 @@ function CST() {
       </ol>
 
       <ol>
+        <li>Sleeping Pullover - 12 x 1</li>
         <li>ChinUps - 12 x 2</li>
         <li>Broad Grip Pullups - 12 x 2</li>
         <li>Stretching</li>
