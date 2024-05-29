@@ -5,6 +5,7 @@ function AbsAndCardio() {
   return (
     <div className='main'>
       <div className='date'>Since 1st January 2024</div>
+      <div className='date'>Abs And Cardio</div>
       <ol>
         <li>Warm-Up</li>
         <li>50 Push-ups</li>
