@@ -30,6 +30,14 @@ function App() {
           Download level 5
         </a>
       </div>
+
+      <div className='main'>
+        <div>Stretching should include</div>
+
+        <div>Bar crossing / 10 pullups(optional)</div>
+        <div>Roller under back and legs</div>
+        <div>Elephants walks</div>
+      </div>
     </div>
   );
 }
