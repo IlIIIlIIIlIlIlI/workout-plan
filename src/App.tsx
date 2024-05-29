@@ -21,6 +21,15 @@ function App() {
       <Legs />
 
       <BackAndBiceps />
+
+      <div className={`resume-text`}>
+        <a
+          href={'workout.pdf'}
+          download='workout 5.pdf'
+        >
+          Download level 5
+        </a>
+      </div>
     </div>
   );
 }
