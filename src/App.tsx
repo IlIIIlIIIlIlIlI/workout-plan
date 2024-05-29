@@ -2,6 +2,7 @@ import React from 'react';
 import AbsAndCardio from './AbsAndCardio';
 import CST from './CST';
 import Legs from './Legs';
+import BackAndBiceps from './BackAndBiceps';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <CST />
 
       <Legs />
+
+      <BackAndBiceps />
     </div>
   );
 }
