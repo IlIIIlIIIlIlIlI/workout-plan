@@ -14,7 +14,7 @@ function AbsAndCardio() {
       <ol>
         <li>Tredmill - 15 minutes || 3km</li>
         <li>
-          Elliptical - <del>15 minutes</del> - 7.5 minutes
+          Elliptical - <del>15 minutes</del> - 7.5 minutes (Optional)
         </li>
         <li>
           Cycle - <del>15 minutes</del> - 7.5 minutes
@@ -22,13 +22,13 @@ function AbsAndCardio() {
       </ol>
 
       <ol>
-        <li>Crunches(Situps) - 15||20 x 3</li>
-        <li>Twisting Crunches(Crunches) - 15||20 x 3</li>
+        <li>Crunches(Situps) - 15||20 x 2</li>
+        <li>Twisting Crunches(Crunches) - 15||20 x 2</li>
       </ol>
 
       <ol>
         <li>Matt Bycle Crunches - 50 x 1</li>
-        <li>Leg Resist - 12||15 x 3</li>
+        <li>Leg Resist - 12||15 x 2</li>
       </ol>
 
       <ol>
