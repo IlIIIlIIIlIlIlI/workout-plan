@@ -34,8 +34,14 @@ function CST() {
       <ol>
         <li>Sleeping Pullover - 12 x 1</li>
         <li>ChinUps - 12 x 2</li>
+        <li>Bar Hanging - 5 minutes</li>
         <li>Broad Grip Pullups - 12 x 2</li>
         <li>Stretching</li>
+      </ol>
+
+      <ol>
+        <li>Roller under back and legs (Optional)</li>
+        <li>Elephants walks</li>
       </ol>
     </div>
   );

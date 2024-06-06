@@ -33,7 +33,13 @@ function Legs() {
 
       <ol>
         <li>Sleeping Pullover - 12 x 1</li>
+        <li>Bar Hanging - 5 minutes</li>
         <li>Stretching</li>
+      </ol>
+
+      <ol>
+        <li>Roller under back and legs</li>
+        <li>Elephants walks</li>
       </ol>
     </div>
   );

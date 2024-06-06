@@ -34,9 +34,10 @@ function App() {
       <div className='main'>
         <div>Stretching should include</div>
 
-        <div>Bar crossing / 10 pullups(optional)</div>
-        <div>Roller under back and legs</div>
-        <div>Elephants walks</div>
+        <div>
+          Bar crossing(cross/monkey crossing) / 10 pullups(pullups optional on
+          legs and cardio day)
+        </div>
       </div>
     </div>
   );
