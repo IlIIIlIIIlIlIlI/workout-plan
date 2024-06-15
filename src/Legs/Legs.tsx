@@ -21,7 +21,8 @@ function Legs() {
 
       <ol>
         <li>Goblet Squats - 14 || 15 x 3</li>
-        <li>Sumo Squats - 14 || 20 x 3</li>
+        <li>Sumo Squats - 14 || 20 x 1</li>
+        <li>Sumo Squats with machine - 14 || 20 x 2</li>
       </ol>
 
       <ol>
