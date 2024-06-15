@@ -12,8 +12,11 @@ function Legs() {
 
       <ol>
         <li>Barbell Squats - 14 || 15 x 3</li>
-        <li>Standing Lunges - 14 || 20 x 2</li>
-        <li>Walking Lunges - 14 || 16 x 1</li>
+        <li>Standing Lunges - 14 || 20 x 1</li>
+        <li>Bulgerian Split Lunges - 14 || 20 x 2</li>
+        <li>
+          <del>Walking Lunges - 14 || 16 x 1</del>
+        </li>
       </ol>
 
       <ol>

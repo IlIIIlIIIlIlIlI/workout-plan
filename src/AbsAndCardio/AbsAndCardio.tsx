@@ -32,6 +32,11 @@ function AbsAndCardio() {
       </ol>
 
       <ol>
+        <li>Weighted Decline Bench Crunches with 10kg - 14-20 x 2</li>
+        <li>Decline Bench Obliques - 14 || 20x 2</li>
+      </ol>
+
+      <ol>
         <li>Sleeping Pullover - 12 x 1</li>
         <li>Bar Hanging - 5 minutes</li>
         <li>Stretching</li>
