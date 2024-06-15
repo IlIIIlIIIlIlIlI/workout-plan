@@ -26,7 +26,10 @@ function Legs() {
 
       <ol>
         <li>Seated Calf Resist - 14 || 20 x 2</li>
-        <li>Standing Calf Resist - 14 || 20 x 2</li>
+        <li>Seated Leg Press Machine Calf Resist - 14 || 20 x 2</li>
+        <li>
+          <del>Standing Calf Resist - 14 || 20 x 2</del>
+        </li>
       </ol>
 
       <ol>
