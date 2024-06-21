@@ -30,7 +30,10 @@ function BackAndBiceps() {
       </ol>
 
       <ol>
-        <li>Bicep Curl - 12 || 16 x 2</li>
+        <li>
+          <del>Bicep Curl - 12 || 16 x 2</del>
+        </li>
+        <li>Single Hand Inclined Bench Preacher Bicep Curl - 12 || 16 x 2</li>
         <li>Hammer Curl - 12 || 16 x 2</li>
         <li>Preacher Curl - 12 || 16 x 2</li>
       </ol>
