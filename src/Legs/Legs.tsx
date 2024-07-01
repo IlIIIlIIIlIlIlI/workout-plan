@@ -11,8 +11,10 @@ function Legs() {
       </ol>
 
       <ol>
-        <li>Barbell Squats - 14 || 15 x 3</li>
-        <li>Standing Lunges - 14 || 20 x 1</li>
+        <li>Barbell Squats - 14 || 15 x 2</li>
+        <li>
+          <del>Standing Lunges - 14 || 20 x 1</del>
+        </li>
         <li>Bulgerian Split Lunges - 14 || 20 x 2</li>
         <li>
           <del>Walking Lunges - 14 || 16 x 1</del>
@@ -20,8 +22,10 @@ function Legs() {
       </ol>
 
       <ol>
-        <li>Goblet Squats - 14 || 15 x 3</li>
-        <li>Sumo Squats - 14 || 20 x 1</li>
+        <li>Goblet Squats - 14 || 15 x 2</li>
+        <li>
+          <del>Sumo Squats - 14 || 20 x 1</del>
+        </li>
         <li>Sumo Squats with machine - 14 || 20 x 2</li>
       </ol>
 
