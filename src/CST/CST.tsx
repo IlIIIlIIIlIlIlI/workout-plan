@@ -7,7 +7,7 @@ function CST() {
 
       <ol>
         <li>Warm-Up</li>
-        <li>100 Push-ups</li>
+        <li>50 Push-ups</li>
       </ol>
 
       <ol>

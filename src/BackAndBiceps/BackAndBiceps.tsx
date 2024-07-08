@@ -6,7 +6,7 @@ function BackAndBiceps() {
       <div className='date'>Back And Biceps</div>
       <ol>
         <li>Warm-Up</li>
-        <li>100 Push-ups</li>
+        <li>50 Push-ups</li>
       </ol>
 
       <ol>
