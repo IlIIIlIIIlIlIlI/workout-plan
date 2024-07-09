@@ -24,7 +24,7 @@ function App() {
             <div className='date2'>Back And Biceps</div>
           </li>
           <li>
-            <div className='date2'>Pushups 250 at home</div>
+            <div className='date2'>Pushups 225 at home</div>
           </li>
         </ol>
 
