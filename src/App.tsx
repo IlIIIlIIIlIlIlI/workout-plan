@@ -26,12 +26,12 @@ function App() {
           <li>
             <div className='date2'>Rest Day</div>
           </li>
-          <li>
-            <div className='date2'>Pushups 225 at home</div>
-          </li>
         </ol>
 
         <ol>
+          <li>
+            <div className='date2'>Pushups 225 at home</div>
+          </li>
           <li>
             <div className='date2'>Abs And Cardio</div>
           </li>
