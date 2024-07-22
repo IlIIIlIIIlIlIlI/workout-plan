@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function Legs() {
   return (
@@ -12,10 +12,10 @@ function Legs() {
 
       <ol>
         <li>Barbell Squats - 14 || 15 x 2</li>
+        <li>Standing Lunges - 14 || 20 x 2</li>
         <li>
-          <del>Standing Lunges - 14 || 20 x 1</del>
+          <del>Bulgerian Split Lunges - 14 || 20 x 2</del>
         </li>
-        <li>Bulgerian Split Lunges - 14 || 20 x 2</li>
         <li>
           <del>Walking Lunges - 14 || 16 x 1</del>
         </li>
