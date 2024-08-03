@@ -10,6 +10,11 @@ function BackAndBiceps() {
       </ol>
 
       <ol>
+        <li>ChinUps - 12 x 2</li>
+        <li>Broad Grip Pullups - 12 x 2</li>
+      </ol>
+
+      <ol>
         <li>Bent OVer Row - 12 || 16 x 2</li>
         <li>Broad Grip Lat Pull Down (Machine)- 12 || 16 x 2</li>
         <li>Narrow Grip Lat Pull Down - 12 || 16 x 2</li>
@@ -40,9 +45,7 @@ function BackAndBiceps() {
 
       <ol>
         <li>Sleeping Pullover - 12 x 1</li>
-        <li>ChinUps - 12 x 2</li>
         <li>Bar Hanging - 5 minutes</li>
-        <li>Broad Grip Pullups - 12 x 2</li>
         <li>Stretching</li>
       </ol>
 

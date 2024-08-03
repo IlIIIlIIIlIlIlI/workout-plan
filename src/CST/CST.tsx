@@ -11,6 +11,11 @@ function CST() {
       </ol>
 
       <ol>
+        <li>ChinUps - 12 x 2</li>
+        <li>Broad Grip Pullups - 12 x 2</li>
+      </ol>
+
+      <ol>
         <li>Flat Bench Press - 14 || 15 x 2</li>
         <li>Incline Bench Press - 14 || 15 x 2</li>
         <li>Decline Bench Press - 14 || 15 x 2</li>
@@ -33,9 +38,7 @@ function CST() {
 
       <ol>
         <li>Sleeping Pullover - 12 x 1</li>
-        <li>ChinUps - 12 x 2</li>
         <li>Bar Hanging - 5 minutes</li>
-        <li>Broad Grip Pullups - 12 x 2</li>
         <li>Stretching</li>
       </ol>
 
