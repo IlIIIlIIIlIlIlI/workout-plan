@@ -17,7 +17,7 @@ function AbsAndCardio() {
           Elliptical - <del>15 minutes</del> - 7.5 minutes (Optional)
         </li>
         <li>
-          Cycle - <del>15 minutes</del> - 7.5 minutes
+          Cycle - <del>15 minutes</del> <del>7.5 minutes</del> - 5 minutes
         </li>
       </ol>
 

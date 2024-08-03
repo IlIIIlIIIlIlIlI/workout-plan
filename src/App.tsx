@@ -1,8 +1,8 @@
-import React from 'react';
-import AbsAndCardio from './AbsAndCardio';
-import CST from './CST';
-import Legs from './Legs';
-import BackAndBiceps from './BackAndBiceps';
+import React from "react";
+import AbsAndCardio from "./AbsAndCardio";
+import CST from "./CST";
+import Legs from "./Legs";
+import BackAndBiceps from "./BackAndBiceps";
 
 function App() {
   return (
@@ -12,23 +12,8 @@ function App() {
 
         <ol>
           <li>
-            <div className='date2'>Abs And Cardio</div>
-          </li>
-          <li>
-            <div className='date2'>Chest Shoulder Tricep</div>
-          </li>
-          <li>
-            <div className='date2'>Legs</div>
-          </li>
-          <li>
-            <div className='date2'>Back And Biceps</div>
-          </li>
-          <li>
             <div className='date2'>Pushups 225 at home</div>
           </li>
-        </ol>
-
-        <ol>
           <li>
             <div className='date2'>Abs And Cardio</div>
           </li>
