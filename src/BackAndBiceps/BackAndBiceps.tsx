@@ -6,7 +6,7 @@ function BackAndBiceps() {
       <div className='date'>Back And Biceps</div>
       <ol>
         <li>Warm-Up</li>
-        <li>50 Push-ups</li>
+        <li>Push-ups - 20 x 2</li>
       </ol>
 
       <ol>
@@ -18,7 +18,9 @@ function BackAndBiceps() {
         <li>Bent OVer Row - 12 || 16 x 2</li>
         <li>Broad Grip Lat Pull Down (Machine)- 12 || 16 x 2</li>
         <li>Narrow Grip Lat Pull Down - 12 || 16 x 2</li>
-        <li>Broad Grip Lat Pull Down (Cable with bar)- 12 || 16 x <del>2</del> 1</li>
+        <li>
+          Broad Grip Lat Pull Down (Cable with bar)- 12 || 16 x <del>2</del> 1
+        </li>
         <li>Seated Row - 12 || 16 x 2</li>
       </ol>
 

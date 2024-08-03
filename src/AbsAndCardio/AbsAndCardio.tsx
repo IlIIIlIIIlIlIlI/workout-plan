@@ -8,7 +8,7 @@ function AbsAndCardio() {
       <div className='date'>Abs And Cardio</div>
       <ol>
         <li>Warm-Up</li>
-        <li>15-20 Push-ups</li>
+        <li>Push-ups - 20 x 1</li>
       </ol>
 
       <ol>
