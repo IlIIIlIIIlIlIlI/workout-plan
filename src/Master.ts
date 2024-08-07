@@ -23,14 +23,42 @@ export type Workout = {
 const currentWarmUp: Variation[] = [
   {
     currentVariation: {
-      exerciseName: 'Neck Rotation (Clockwise and Anti-clockwise)',
+      exerciseName: 'Neck Rotation (Clockwise and Anti-clockwise each)',
       repeatition: 20,
       set: 1,
     },
   },
   {
     currentVariation: {
-      exerciseName: 'Neck Rotation (Clockwise and Anti-clockwise)',
+      exerciseName: 'Shoulder Rotation (Clockwise and Anti-clockwise each)',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName: 'Arms Rotation (Clockwise and Anti-clockwise each)',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName: 'Hip circles (Clockwise and Anti-clockwise each)',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName: 'Leg Swings',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName: 'Toe Rotation',
       repeatition: 20,
       set: 1,
     },
