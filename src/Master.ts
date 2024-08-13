@@ -17,7 +17,7 @@ export type Workout = {
   workout: Variation;
   postWorkout?: Variation;
 
-  stretching: Variation;
+  stretching: Variation[];
 };
 
 const currentWarmUp: Variation[] = [
@@ -157,6 +157,8 @@ export const currentStretching: Variation[] = [
 export const absAndCardio: Workout = {
   name: 'Abs and Cardio',
   warmUp: currentWarmUp,
+
+  stretching: currentStretching,
 };
 
 export const workOutRoutine = {};
