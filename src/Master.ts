@@ -65,6 +65,95 @@ const currentWarmUp: Variation[] = [
   },
 ];
 
+export const currentStretching: Variation[] = [
+  {
+    currentVariation: {
+      exerciseName: 'Finger Stretchs',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName: 'Finger Stretchs Reverse',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName:
+        'Arms on chest Stretch with another hand vartical to it (+ sign)',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName: 'Triceps Stretch',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName: 'Arms on opposite wall (Reverse)',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName: 'One leg complete weight (vertical V)',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName: 'Quadceps stretch (One leg on one glut by hand)',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName: 'Quadceps stretch on bench',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName:
+        'Knee and Glut stretch on bench (Touching toes to the head)',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName: 'Calf strench',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName: 'Cobra Pose',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
+      exerciseName: 'D Pose',
+      repeatition: 20,
+      set: 1,
+    },
+  },
+];
+
 export const absAndCardio: Workout = {
   name: 'Abs and Cardio',
   warmUp: currentWarmUp,
