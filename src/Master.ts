@@ -220,7 +220,7 @@ export const absAndCardio: Workout = {
     {
       currentVariation: {
         exerciseName: 'Push ups',
-        repeatition: { min: 15, max: 20 },
+        repeatition: { min: 20, max: 20 },
         set: 1,
       },
 
@@ -547,6 +547,176 @@ export const CST: Workout = {
   ],
 
   postWorkout: postWorkOut(true),
+  stretching: currentStretching,
+};
+
+export const Legs: Workout = {
+  name: 'Legs',
+  warmUp: currentWarmUp,
+
+  preWorkout: [
+    {
+      currentVariation: {
+        exerciseName: 'Push ups',
+        repeatition: { min: 20, max: 20 },
+        set: 1,
+      },
+
+      olderVariation: [
+        {
+          exerciseName: 'Push ups',
+          repeatition: { min: 15, max: 20 },
+          set: 3,
+        },
+      ],
+    },
+  ],
+
+  workout: [
+    {
+      name: 'Compount Movement',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Barbell Squats',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Standing Lunges',
+            repeatition: {
+              min: 14,
+              max: 20,
+            },
+            set: 2,
+          },
+          olderVariation: [
+            {
+              exerciseName: 'Bulgerian Split Squats (Lunges)',
+              repeatition: {
+                min: 14,
+                max: 20,
+              },
+              set: 2,
+            },
+            {
+              exerciseName: 'Walking Lunges',
+              repeatition: {
+                min: 14,
+                max: 20,
+              },
+              set: 2,
+            },
+          ],
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Goblet Squats',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Sumo Squats with machine',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+
+          olderVariation: [
+            {
+              exerciseName: 'Sumo Squats With Dumbell',
+              repeatition: {
+                min: 14,
+                max: 15,
+              },
+              set: 2,
+            },
+          ],
+        },
+      ],
+    },
+
+    {
+      name: 'Calf',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Seated Calf Raises',
+            repeatition: {
+              min: 14,
+              max: 20,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Seated Leg Press Machine Calf Resist',
+            repeatition: {
+              min: 14,
+              max: 20,
+            },
+            set: 2,
+          },
+          olderVariation: [
+            {
+              exerciseName: 'Standing Smith Machine Calf Resist',
+              repeatition: {
+                min: 14,
+                max: 20,
+              },
+              set: 2,
+            },
+          ],
+        },
+      ],
+    },
+
+    {
+      name: 'Hamstring And Quadceps',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Leg Extension',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 3,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Leg Curl',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 3,
+          },
+        },
+      ],
+    },
+  ],
+
+  postWorkout: postWorkOut(false),
   stretching: currentStretching,
 };
 
