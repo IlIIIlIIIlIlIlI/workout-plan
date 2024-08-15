@@ -217,6 +217,74 @@ export const postWorkOut = (isActive: boolean): Variation[] => {
 const endNote =
   'Bar crossing(monkey crossing) was ealier practiced instead of Pull-ups and chin-ups. (Pull-ups and chin-ups are optional on legs and cardio day)';
 
+export const pushUps: Workout = {
+  name: 'Push-ups day',
+  warmUp: currentWarmUp,
+  preWorkout: [
+    {
+      currentVariation: {
+        exerciseName: 'Broad Grip Pullups',
+        repeatition: {
+          min: 7,
+          max: 14,
+        },
+        set: 2,
+      },
+    },
+
+    {
+      currentVariation: {
+        exerciseName: 'Chin-ups',
+        repeatition: {
+          min: 7,
+          max: 14,
+        },
+        set: 2,
+      },
+    },
+
+    {
+      currentVariation: {
+        exerciseName: 'Push ups',
+        repeatition: { min: 20, max: 20 },
+        set: 2,
+      },
+    },
+  ],
+
+  workout: [
+    {
+      name: 'Triceps',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Push-Ups On Elevated Toes Narrow Width',
+            repeatition: { min: 15 },
+            set: 6,
+          },
+        },
+      ],
+    },
+
+    {
+      name: 'Chest',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Push-Ups On Elevated Toes Broad Width',
+            repeatition: { min: 15 },
+            set: 6,
+          },
+        },
+      ],
+    },
+  ],
+
+  postWorkout: postWorkOut(true),
+  stretching: currentStretching,
+  note: endNote,
+};
+
 export const absAndCardio: Workout = {
   name: 'Abs and Cardio',
   warmUp: currentWarmUp,
@@ -728,7 +796,7 @@ export const legs: Workout = {
   note: endNote,
 };
 
-export const BackAndBiceps: Workout = {
+export const backAndBiceps: Workout = {
   name: 'Back And Biceps',
   warmUp: currentWarmUp,
 
@@ -935,4 +1003,31 @@ export const BackAndBiceps: Workout = {
   note: endNote,
 };
 
-export const workOutRoutine = {};
+export const restDay: Workout = {
+  name: 'Rest day',
+  warmUp: currentWarmUp,
+  preWorkout: [
+    {
+      currentVariation: {
+        exerciseName: 'Push ups',
+        repeatition: { min: 20, max: 20 },
+        set: 1,
+      },
+    },
+  ],
+
+  workout: [],
+
+  postWorkout: [],
+  stretching: currentStretching,
+  note: endNote,
+};
+
+export const workOutRoutine: { [name: string]: Workout }[] = [
+  { 'Push-up day': pushUps },
+  { 'Abs And Cardio': absAndCardio },
+  { 'Chest Shoulder Triceps': CST },
+  { Legs: legs },
+  { 'Back and Biceps': backAndBiceps },
+  { Rest: restDay },
+];
