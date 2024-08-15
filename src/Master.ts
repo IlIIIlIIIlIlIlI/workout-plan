@@ -420,7 +420,131 @@ export const CST: Workout = {
     },
   ],
 
-  workout: [],
+  workout: [
+    {
+      name: 'Chest',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Flat Bench Press',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Incline Bench Press',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Decline Bench Press',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Machine Peck-Deck Fly',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+      ],
+    },
+
+    {
+      name: 'Shoulders',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Overhead Machine Shoulder Press',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+          olderVariation: [
+            {
+              exerciseName: 'Overhead Shoulder Press',
+              repeatition: {
+                min: 14,
+                max: 15,
+              },
+              set: 2,
+            },
+          ],
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Lateral Raises',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+      ],
+    },
+
+    {
+      name: 'Triceps',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Flat Bench Close Grip Chest Press',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Tricep Cable Pulldown',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Parallel Bar Dips',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+      ],
+    },
+  ],
 
   postWorkout: postWorkOut(true),
   stretching: currentStretching,
