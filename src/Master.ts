@@ -2,6 +2,7 @@ export type Exercise = {
   exerciseName: string;
   repeatition: number;
   set: number;
+  isActive?: boolean;
 };
 
 export type Variation = {
@@ -13,9 +14,9 @@ export type Workout = {
   name: string;
   warmUp: Variation[];
 
-  preWorkout?: Variation;
-  workout: Variation;
-  postWorkout?: Variation;
+  preWorkout?: Variation[];
+  workout: Variation[];
+  postWorkout?: Variation[];
 
   stretching: Variation[];
 };
@@ -157,6 +158,66 @@ export const currentStretching: Variation[] = [
 export const absAndCardio: Workout = {
   name: 'Abs and Cardio',
   warmUp: currentWarmUp,
+
+  preWorkout: [
+    {
+      currentVariation: {
+        exerciseName: 'Push ups',
+        repeatition: 20,
+        set: 1,
+      },
+
+      olderVariation: [
+        {
+          exerciseName: 'Push ups',
+          repeatition: 20,
+          set: 3,
+        },
+      ],
+    },
+  ],
+
+  workout: [
+    {
+      currentVariation: {
+        exerciseName: 'Tread Mill (3km) (1km elevated at 3.0) (2km flat)',
+        repeatition: 15,
+        set: 1,
+      },
+    },
+    {
+      currentVariation: {
+        exerciseName: 'Eliptical (15 minutes)',
+        repeatition: 15,
+        set: 1,
+        isActive: false,
+      },
+    },
+    {
+      currentVariation: {
+        exerciseName: 'Cycling (3.45 minutes)',
+        repeatition: 15,
+        set: 1,
+      },
+      olderVariation: [
+        {
+          exerciseName: 'Cycling (15 minutes)',
+          repeatition: 15,
+          set: 1,
+        },
+      ],
+    },
+  ],
+
+  postWorkout: [
+    {
+      currentVariation: {
+        exerciseName: 'Passive Hanging (Back Stretch)',
+        repeatition: 20,
+        set: 1,
+      },
+    },
+  ],
 
   stretching: currentStretching,
 };
