@@ -29,6 +29,8 @@ export type Workout = {
   postWorkout?: Variation[];
 
   stretching: Variation[];
+
+  note: string;
 };
 
 const currentWarmUp: Variation[] = [
@@ -212,6 +214,9 @@ export const postWorkOut = (isActive: boolean): Variation[] => {
   ];
 };
 
+const endNote =
+  'Bar crossing(monkey crossing) was ealier practiced instead of Pull-ups and chin-ups which are optional on legs and cardio day';
+
 export const absAndCardio: Workout = {
   name: 'Abs and Cardio',
   warmUp: currentWarmUp,
@@ -375,6 +380,7 @@ export const absAndCardio: Workout = {
 
   postWorkout: postWorkOut(false),
   stretching: currentStretching,
+  note: endNote,
 };
 
 export const CST: Workout = {
@@ -548,6 +554,7 @@ export const CST: Workout = {
 
   postWorkout: postWorkOut(true),
   stretching: currentStretching,
+  note: endNote,
 };
 
 export const legs: Workout = {
@@ -718,6 +725,7 @@ export const legs: Workout = {
 
   postWorkout: postWorkOut(false),
   stretching: currentStretching,
+  note: endNote,
 };
 
 export const BackAndBiceps: Workout = {
@@ -924,6 +932,7 @@ export const BackAndBiceps: Workout = {
 
   postWorkout: postWorkOut(true),
   stretching: currentStretching,
+  note: endNote,
 };
 
 export const workOutRoutine = {};
