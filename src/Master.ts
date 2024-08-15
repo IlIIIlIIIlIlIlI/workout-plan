@@ -165,6 +165,53 @@ export const currentStretching: Variation[] = [
   },
 ];
 
+export const postWorkOut = (isActive: boolean): Variation[] => {
+  return [
+    {
+      currentVariation: {
+        exerciseName: `${
+          isActive ? 'Active ' : 'Passive '
+        } Hanging (Back Stretch)`,
+        repeatition: {
+          min: 1,
+        },
+        set: 1,
+      },
+    },
+
+    {
+      currentVariation: {
+        exerciseName: 'Sleeping Pull Over',
+        repeatition: {
+          min: 14,
+          max: 20,
+        },
+        set: 1,
+      },
+    },
+
+    {
+      currentVariation: {
+        exerciseName: 'Roller Under The Legs',
+        repeatition: {
+          min: 1,
+        },
+        set: 1,
+      },
+    },
+
+    {
+      currentVariation: {
+        exerciseName: 'Elephant Walks',
+        repeatition: {
+          min: 20,
+        },
+        set: 1,
+      },
+    },
+  ];
+};
+
 export const absAndCardio: Workout = {
   name: 'Abs and Cardio',
   warmUp: currentWarmUp,
@@ -314,18 +361,54 @@ export const absAndCardio: Workout = {
     },
   ],
 
-  postWorkout: [
+  postWorkout: postWorkOut(false),
+  stretching: currentStretching,
+};
+
+export const CST: Workout = {
+  name: 'Chest, Shoulder, Triceps',
+  warmUp: currentWarmUp,
+
+  preWorkout: [
     {
       currentVariation: {
-        exerciseName: 'Active Hanging (Back Stretch)',
-        repeatition: {
-          min: 1,
+        exerciseName: 'Push ups',
+        repeatition: { min: 20, max: 20 },
+        set: 2,
+      },
+      olderVariation: [
+        {
+          exerciseName: 'Push ups',
+          repeatition: { min: 15, max: 20 },
+          set: 3,
         },
-        set: 1,
+      ],
+    },
+
+    {
+      currentVariation: {
+        exerciseName: 'Broad Grip Pullups',
+        repeatition: {
+          min: 7,
+          max: 14,
+        },
+        set: 2,
+      },
+    },
+
+    {
+      currentVariation: {
+        exerciseName: 'Chin-ups',
+        repeatition: {
+          min: 7,
+          max: 14,
+        },
+        set: 2,
       },
     },
   ],
 
+  postWorkout: postWorkOut(true),
   stretching: currentStretching,
 };
 
