@@ -215,7 +215,7 @@ export const postWorkOut = (isActive: boolean): Variation[] => {
 };
 
 const endNote =
-  'Bar crossing(monkey crossing) was ealier practiced instead of Pull-ups and chin-ups which are optional on legs and cardio day';
+  'Bar crossing(monkey crossing) was ealier practiced instead of Pull-ups and chin-ups. (Pull-ups and chin-ups are optional on legs and cardio day)';
 
 export const absAndCardio: Workout = {
   name: 'Abs and Cardio',
