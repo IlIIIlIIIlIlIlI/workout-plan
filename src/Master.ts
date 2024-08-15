@@ -550,7 +550,7 @@ export const CST: Workout = {
   stretching: currentStretching,
 };
 
-export const Legs: Workout = {
+export const legs: Workout = {
   name: 'Legs',
   warmUp: currentWarmUp,
 
@@ -717,6 +717,212 @@ export const Legs: Workout = {
   ],
 
   postWorkout: postWorkOut(false),
+  stretching: currentStretching,
+};
+
+export const BackAndBiceps: Workout = {
+  name: 'Back And Biceps',
+  warmUp: currentWarmUp,
+
+  preWorkout: [
+    {
+      currentVariation: {
+        exerciseName: 'Push ups',
+        repeatition: { min: 20, max: 20 },
+        set: 2,
+      },
+      olderVariation: [
+        {
+          exerciseName: 'Push ups',
+          repeatition: { min: 15, max: 20 },
+          set: 3,
+        },
+      ],
+    },
+
+    {
+      currentVariation: {
+        exerciseName: 'Broad Grip Pullups',
+        repeatition: {
+          min: 7,
+          max: 14,
+        },
+        set: 2,
+      },
+    },
+
+    {
+      currentVariation: {
+        exerciseName: 'Chin-ups',
+        repeatition: {
+          min: 7,
+          max: 14,
+        },
+        set: 2,
+      },
+    },
+  ],
+
+  workout: [
+    {
+      name: 'Back',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Bent Over Row',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Seated Row',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Broad Grip Lat Pull Down (Machine)',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Narrow Grip Lat Pull Down',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Broad Grip Lat Pull Down (Cable with bar)',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 1,
+          },
+        },
+      ],
+    },
+
+    {
+      name: 'Traps',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Shrugs',
+            repeatition: {
+              min: 14,
+              max: 20,
+            },
+            set: 2,
+          },
+        },
+      ],
+    },
+
+    {
+      name: 'Deltoid',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Rear Delt Row',
+            repeatition: {
+              min: 14,
+              max: 20,
+            },
+            set: 2,
+          },
+        },
+      ],
+    },
+
+    {
+      name: 'Lower Back',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Back Extention / Good Morning',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 2,
+          },
+        },
+      ],
+    },
+
+    {
+      name: 'Biceps',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Single Hand Inclined Bench Preacher Bicep Curl',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 2,
+          },
+
+          olderVariation: [
+            {
+              exerciseName: 'Bicep Curl',
+              repeatition: {
+                min: 14,
+                max: 16,
+              },
+              set: 2,
+            },
+          ],
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Hammer Curl',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Preacher Curl',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 2,
+          },
+        },
+      ],
+    },
+  ],
+
+  postWorkout: postWorkOut(true),
   stretching: currentStretching,
 };
 
