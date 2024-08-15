@@ -171,7 +171,7 @@ export const postWorkOut = (isActive: boolean): Variation[] => {
       currentVariation: {
         exerciseName: `${
           isActive ? 'Active ' : 'Passive '
-        } Hanging (Back Stretch)`,
+        } Bar Hanging (Back Stretch)`,
         repeatition: {
           min: 1,
         },
