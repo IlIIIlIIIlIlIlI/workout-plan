@@ -247,22 +247,34 @@ export const absAndCardio: Workout = {
         },
         {
           currentVariation: {
-            exerciseName: 'Eliptical (15 minutes)',
-            repeatition: { min: 15 },
+            exerciseName: 'Eliptical (7.5 minutes)',
+            repeatition: { min: 1 },
             set: 1,
             isActive: false,
           },
+          olderVariation: [
+            {
+              exerciseName: 'Eliptical (15 minutes)',
+              repeatition: { min: 1 },
+              set: 1,
+            },
+          ],
         },
         {
           currentVariation: {
             exerciseName: 'Cycling (3.45 minutes)',
-            repeatition: { min: 3, max: 4 },
+            repeatition: { min: 1 },
             set: 1,
           },
           olderVariation: [
             {
+              exerciseName: 'Cycling (7.5 minutes)',
+              repeatition: { min: 1 },
+              set: 1,
+            },
+            {
               exerciseName: 'Cycling (15 minutes)',
-              repeatition: { min: 15 },
+              repeatition: { min: 1 },
               set: 1,
             },
           ],
@@ -407,6 +419,8 @@ export const CST: Workout = {
       },
     },
   ],
+
+  workout: [],
 
   postWorkout: postWorkOut(true),
   stretching: currentStretching,
