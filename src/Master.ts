@@ -625,8 +625,8 @@ export const CST: Workout = {
   note: endNote,
 };
 
-export const legs: Workout = {
-  name: 'Legs',
+export const legsAndAbs: Workout = {
+  name: 'Legs And Abs',
   warmUp: currentWarmUp,
 
   preWorkout: [
@@ -786,6 +786,96 @@ export const legs: Workout = {
             },
             set: 3,
           },
+        },
+      ],
+    },
+
+    {
+      name: 'Abs',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Machine Crunches',
+            repeatition: {
+              min: 14,
+              max: 20,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Machine Oblique Crunches',
+            repeatition: {
+              min: 14,
+              max: 20,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Leg Raises',
+            repeatition: {
+              min: 14,
+              max: 20,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Mat Cycling Optional',
+            repeatition: {
+              min: 50,
+            },
+            set: 1,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Weighted Decline Bench Crunches with 10kg',
+            repeatition: {
+              min: 14,
+              max: 20,
+            },
+            set: 2,
+          },
+          olderVariation: [
+            {
+              exerciseName: 'Mat Crunches',
+              repeatition: {
+                min: 20,
+                max: 20,
+              },
+              set: 2,
+            },
+          ],
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Decline Bench Obliques Optional',
+            repeatition: {
+              min: 14,
+              max: 20,
+            },
+            set: 2,
+          },
+          olderVariation: [
+            {
+              exerciseName: 'Mat Obliques Crunches',
+              repeatition: {
+                min: 20,
+                max: 20,
+              },
+              set: 2,
+            },
+          ],
         },
       ],
     },
@@ -1027,7 +1117,7 @@ export const workOutRoutine: { [name: string]: Workout }[] = [
   { 'Push-up day': pushUps },
   { 'Abs And Cardio': absAndCardio },
   { 'Chest Shoulder Triceps': CST },
-  { Legs: legs },
+  { Legs: legsAndAbs },
   { 'Back and Biceps': backAndBiceps },
   { Rest: restDay },
 ];
