@@ -1117,7 +1117,7 @@ export const workOutRoutine: { [name: string]: Workout }[] = [
   { 'Push-up day': pushUps },
   { 'Abs And Cardio': absAndCardio },
   { 'Chest Shoulder Triceps': CST },
-  { Legs: legsAndAbs },
+  { 'Legs and Abs': legsAndAbs },
   { 'Back and Biceps': backAndBiceps },
   { Rest: restDay },
 ];
