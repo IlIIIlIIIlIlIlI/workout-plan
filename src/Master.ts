@@ -773,8 +773,18 @@ export const legsAndAbs: Workout = {
               min: 14,
               max: 16,
             },
-            set: 3,
+            set: 2,
           },
+          olderVariation: [
+            {
+              exerciseName: 'Leg Extension',
+              repeatition: {
+                min: 14,
+                max: 16,
+              },
+              set: 3,
+            },
+          ],
         },
 
         {
@@ -784,8 +794,18 @@ export const legsAndAbs: Workout = {
               min: 14,
               max: 16,
             },
-            set: 3,
+            set: 2,
           },
+          olderVariation: [
+            {
+              exerciseName: 'Leg Curl',
+              repeatition: {
+                min: 14,
+                max: 16,
+              },
+              set: 3,
+            },
+          ],
         },
       ],
     },
