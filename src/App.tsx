@@ -1,12 +1,14 @@
-import React from "react";
-import AbsAndCardio from "./AbsAndCardio";
-import CST from "./CST";
-import Legs from "./Legs";
-import BackAndBiceps from "./BackAndBiceps";
+import React from 'react';
+import AbsAndCardio from './AbsAndCardio';
+import CST from './CST';
+import Legs from './Legs';
+import BackAndBiceps from './BackAndBiceps';
+import Split from './Split';
 
 function App() {
   return (
     <div>
+      <Split />
       <div className='main'>
         <div className='date1'>Sprint</div>
 
