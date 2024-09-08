@@ -24,9 +24,9 @@ export type Workout = {
   name: string;
   warmUp: Variation[];
 
-  preWorkout?: Variation[];
+  preWorkout: Variation[];
   workout: Split[];
-  postWorkout?: Variation[];
+  postWorkout: Variation[];
 
   stretching: Variation[];
 
@@ -1133,11 +1133,11 @@ export const restDay: Workout = {
   note: endNote,
 };
 
-export const workOutRoutine: { [name: string]: Workout }[] = [
-  { 'Push-up day': pushUps },
-  { 'Abs And Cardio': absAndCardio },
-  { 'Chest Shoulder Triceps': CST },
-  { 'Legs and Abs': legsAndAbs },
-  { 'Back and Biceps': backAndBiceps },
-  { Rest: restDay },
+export const workOutRoutine: Workout[] = [
+  pushUps,
+  absAndCardio,
+  CST,
+  legsAndAbs,
+  backAndBiceps,
+  restDay,
 ];
