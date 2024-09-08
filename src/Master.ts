@@ -7,7 +7,7 @@ export type Exercise = {
   exerciseName: string;
   repeatition: Range;
   set: number;
-  isActive?: boolean;
+  isInActive?: boolean;
 };
 
 export type Variation = {
@@ -323,7 +323,7 @@ export const absAndCardio: Workout = {
             exerciseName: 'Eliptical (7.5 minutes)',
             repeatition: { min: 1 },
             set: 1,
-            isActive: false,
+            isInActive: false,
           },
           olderVariation: [
             {
