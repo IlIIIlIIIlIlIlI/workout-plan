@@ -7,5 +7,27 @@ $base-class: split;
 .#{$base-class} {
     &__container {
         font-family: 'eurostile', sans-serif;
+        text-align: center;
+    }
+
+    &__header-name {
+        font-size: 20px;
+        color: #01404e;
+        margin-bottom: 20px;
+    }
+
+    &__vartiation-title {
+        font-size: 20px;
+        color: #0a0452;
+        margin-bottom: 10px;
+    }
+
+    &__warmup {
+        padding: 20px;
+        background-color: rgba($color: #60ff05, $alpha: 0.2);
+        font-size: 10px;
+        font-style: italic;
+        color: #010544;
+        margin-bottom: 20px;
     }
 }
