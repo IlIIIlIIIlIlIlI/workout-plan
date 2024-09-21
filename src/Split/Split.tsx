@@ -57,50 +57,23 @@ function Split() {
       {workOutRoutine.map((routine) => {
         return (
           <div>
-            <div className={`${scssObj.baseClass}__header-name`}>
-              {routine.name}
-            </div>
-
-            <div className={`${scssObj.baseClass}__vartiation-title`}>
-              Warm-up variations
-            </div>
-
-            {routine.warmUp.map((variation) => getVariationPrinted(variation))}
-
-            {/* <div className={`${scssObj.baseClass}__header-name`}>
-              {routine.preWorkout.map((variation) =>
-                getVariationPrinted(variation)
-              )}
-            </div> */}
-
-            {/* <div className={`${scssObj.baseClass}__header-name`}>
-              {routine.workout.map((split) => (
-                <div>
-                  <div>{split.name}</div>
-                  <div>
-                    {split.variations.map((variation) =>
-                      getVariationPrinted(variation)
-                    )}
-                  </div>
+            <Accordion className={`${scssObj.baseClass}__split-summary`}>
+              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                <div className={`${scssObj.baseClass}__header-name`}>
+                  {routine.name}
                 </div>
-              ))}
-            </div>
+              </AccordionSummary>
 
-            <div className={`${scssObj.baseClass}__header-name`}>
-              {routine.postWorkout.map((variation) =>
-                getVariationPrinted(variation)
-              )}
-            </div>
+              <AccordionDetails>
+                <div className={`${scssObj.baseClass}__vartiation-title`}>
+                  Warm-up variations
+                </div>
 
-            <div className={`${scssObj.baseClass}__header-name`}>
-              {routine.stretching.map((variation) =>
-                getVariationPrinted(variation)
-              )}
-            </div>
-
-            <div className={`${scssObj.baseClass}__header-name`}>
-              {routine.note}
-            </div> */}
+                {routine.warmUp.map((variation) =>
+                  getVariationPrinted(variation)
+                )}
+              </AccordionDetails>
+            </Accordion>
           </div>
         );
       })}
