@@ -301,7 +301,6 @@ export const pushUps: Workout = {
     {
       name: 'Biceps',
       variations: [
-
         {
           currentVariation: {
             exerciseName: 'Preacher Curl',
