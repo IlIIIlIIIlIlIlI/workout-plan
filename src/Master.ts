@@ -230,7 +230,7 @@ export const pushUps: Workout = {
   preWorkout: [
     {
       currentVariation: {
-        exerciseName: 'Broad Grip Pullups',
+        exerciseName: 'Broad Grip Pullups (Optional at Home)',
         repeatition: {
           min: 7,
           max: 14,
@@ -241,7 +241,7 @@ export const pushUps: Workout = {
 
     {
       currentVariation: {
-        exerciseName: 'Chin-ups',
+        exerciseName: 'Chin-ups (Optional at Home)',
         repeatition: {
           min: 7,
           max: 14,
