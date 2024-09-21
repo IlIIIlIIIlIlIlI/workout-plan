@@ -20,13 +20,15 @@ const getVariationPrinted = (variation: Variation) => {
   const olderVarions = variation.olderVariation || [];
   return (
     <div>
-      <Accordion>
+      <Accordion className={`${scssObj.baseClass}__acc-summary`}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <div>
-            <div>
+          <div className={`${scssObj.baseClass}__current-excersice`}>
+            <div className={`${scssObj.baseClass}__excersice-name`}>
               {getSingleExcerciseTextPrinted(currentVariation).excersiceName}
             </div>
-            <div>{getSingleExcerciseTextPrinted(currentVariation).perform}</div>
+            <div className={`${scssObj.baseClass}__excersice-sets`}>
+              {getSingleExcerciseTextPrinted(currentVariation).perform}
+            </div>
           </div>
         </AccordionSummary>
 
