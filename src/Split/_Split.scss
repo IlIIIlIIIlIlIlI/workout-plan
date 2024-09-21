@@ -8,6 +8,21 @@ $base-class: split;
     &__container {
         font-family: 'eurostile', sans-serif;
         text-align: center;
+        margin: auto;
+        max-width: 1024px;
+        width: 98vw;
+    }
+
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+        &__container {
+            width: 98vw;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        &__container {
+            width: 98vw;
+        }
     }
 
     &__header-name {
