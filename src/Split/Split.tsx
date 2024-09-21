@@ -1,17 +1,18 @@
 import React from 'react';
 import scssObj from './_Split.scss';
 import { Exercise, Variation, workOutRoutine } from '../Master';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const getSingleExcercisePrinted = (exercise: Exercise) => {
-  return (
-    <div
-      style={{ textDecoration: exercise.isInActive ? 'line-through' : 'none' }}
-    >
-      {exercise.exerciseName} -- ({exercise.repeatition.min}
-      {exercise.repeatition.max ? ` - ${exercise.repeatition.max} x ` : ' x '}
-      {exercise.set})
-    </div>
-  );
+const getSingleExcerciseTextPrinted = (exercise: Exercise) => {
+  return {
+    excersiceName: exercise.exerciseName,
+    perform: `(${exercise.repeatition.min} ${
+      exercise.repeatition.max ? `- ${exercise.repeatition.max} reps` : ' reps'
+    }) x (${exercise.set} set)`,
+  };
 };
 
 const getVariationPrinted = (variation: Variation) => {
@@ -19,13 +20,31 @@ const getVariationPrinted = (variation: Variation) => {
   const olderVarions = variation.olderVariation || [];
   return (
     <div>
-      {getSingleExcercisePrinted(currentVariation)}
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <div>
+            <div>
+              {getSingleExcerciseTextPrinted(currentVariation).excersiceName}
+            </div>
+            <div>{getSingleExcerciseTextPrinted(currentVariation).perform}</div>
+          </div>
+        </AccordionSummary>
 
-      <div>
-        {olderVarions.map((variation) => {
-          return <del>{getSingleExcercisePrinted(variation)}</del>;
-        })}
-      </div>
+        {olderVarions.length ? (
+          <AccordionDetails>
+            {olderVarions.map((variation) => (
+              <div>
+                <div>
+                  {getSingleExcerciseTextPrinted(variation).excersiceName}
+                </div>
+                <div>{getSingleExcerciseTextPrinted(variation).perform}</div>
+              </div>
+            ))}
+          </AccordionDetails>
+        ) : (
+          <></>
+        )}
+      </Accordion>
     </div>
   );
 };
@@ -40,20 +59,17 @@ function Split() {
               {routine.name}
             </div>
 
-            <div className={`${scssObj.baseClass}__warmup`}>
-              <div className={`${scssObj.baseClass}__vartiation-title`}>
-                Warm-up variations
-              </div>
-              {routine.warmUp.map((variation) =>
-                getVariationPrinted(variation)
-              )}
+            <div className={`${scssObj.baseClass}__vartiation-title`}>
+              Warm-up variations
             </div>
 
-            <div className={`${scssObj.baseClass}__header-name`}>
+            {routine.warmUp.map((variation) => getVariationPrinted(variation))}
+
+            {/* <div className={`${scssObj.baseClass}__header-name`}>
               {routine.preWorkout.map((variation) =>
                 getVariationPrinted(variation)
               )}
-            </div>
+            </div> */}
 
             {/* <div className={`${scssObj.baseClass}__header-name`}>
               {routine.workout.map((split) => (
