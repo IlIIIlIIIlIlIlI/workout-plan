@@ -261,6 +261,61 @@ export const pushUps: Workout = {
 
   workout: [
     {
+      name: 'Back',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Seated Row',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Narrow Grip Lat Pull Down',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Broad Grip Lat Pull Down (Cable with bar)',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 1,
+          },
+        },
+      ],
+    },
+
+    {
+      name: 'Biceps',
+      variations: [
+
+        {
+          currentVariation: {
+            exerciseName: 'Preacher Curl',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 2,
+          },
+        },
+      ],
+    },
+
+    {
       name: 'Triceps',
       variations: [
         {
