@@ -71,6 +71,13 @@ const currentWarmUp: Variation[] = [
   },
   {
     currentVariation: {
+      exerciseName: 'Knee Swings',
+      repeatition: { min: 20 },
+      set: 1,
+    },
+  },
+  {
+    currentVariation: {
       exerciseName: 'Toe Rotation',
       repeatition: { min: 20 },
       set: 1,
