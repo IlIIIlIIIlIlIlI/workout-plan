@@ -1195,8 +1195,10 @@ export const restDay: Workout = {
 };
 
 export const workOutRoutine: Workout[] = [
+  legsAndAbs,
   pushUps,
   absAndCardio,
+  restDay,
   CST,
   legsAndAbs,
   backAndBiceps,
