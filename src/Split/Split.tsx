@@ -118,6 +118,28 @@ function Split() {
                     </>
                   </GetAccordianated>
                 </div>
+
+                <div className={`${scssObj.baseClass}__splits`}>
+                  <GetAccordianated
+                    headerClassName={`${scssObj.baseClass}__preworkout-variation-title`}
+                    bgColor='#fbf0db'
+                    headerTitle={
+                      <div className={`${scssObj.baseClass}__vartiation-title`}>
+                        Pre-Workout Variations
+                      </div>
+                    }
+                  >
+                    <>
+                      {routine.preWorkout.map((variation) =>
+                        getVariationPrinted(
+                          variation,
+                          `${scssObj.baseClass}__preworkout-variation-inner-accordian`,
+                          '#fbf0db'
+                        )
+                      )}
+                    </>
+                  </GetAccordianated>
+                </div>
               </AccordionDetails>
             </Accordion>
           </div>
