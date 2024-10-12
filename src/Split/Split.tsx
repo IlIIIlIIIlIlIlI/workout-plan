@@ -55,12 +55,10 @@ const getVariationPrinted = (
           expandIcon={olderVarions.length ? <ExpandMoreIcon /> : undefined}
         >
           <div className={`${scssObj.baseClass}__current-excersice`}>
-            <div className={`${scssObj.baseClass}__excersice-name`}>
+            <div>
               {getSingleExcerciseTextPrinted(currentVariation).excersiceName}
             </div>
-            <div className={`${scssObj.baseClass}__excersice-sets`}>
-              {getSingleExcerciseTextPrinted(currentVariation).perform}
-            </div>
+            <div>{getSingleExcerciseTextPrinted(currentVariation).perform}</div>
           </div>
         </AccordionSummary>
 
@@ -112,7 +110,7 @@ function Split() {
                     {routine.warmUp.map((variation) =>
                       getVariationPrinted(
                         variation,
-                        `${scssObj.baseClass}__warmup-variation-title`,
+                        `${scssObj.baseClass}__warmup-variation-inner-accordian`,
                         '#dcf6e1'
                       )
                     )}

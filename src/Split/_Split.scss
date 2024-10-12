@@ -34,7 +34,6 @@ $base-class: split;
     }
 
     &__vartiation-title {
-        color: #333333;
         font-size: 25px;
         margin: 10px 10px 15px 10px;
     }
@@ -49,7 +48,16 @@ $base-class: split;
 
     &__warmup-variation-title {
         .MuiButtonBase-root {
-            background-color: #06b738 !important;
+            background-color: #8ee29e !important;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #d9d8d8;
+        }
+    }
+
+    &__warmup-variation-inner-accordian {
+        .MuiButtonBase-root {
+            background-color: #bdeec6 !important;
             border-width: 1px;
             border-style: solid;
             border-color: #d9d8d8;
@@ -67,14 +75,5 @@ $base-class: split;
 
     &__details-older-excercise {
        margin: 10px 0px;
-    }
-
-    &__excersice-name {
-        color: #ffffff;
-        margin-bottom: 5px;
-    }
-
-    &__excersice-sets {
-        color: #e0e0e0;
     }
 }
