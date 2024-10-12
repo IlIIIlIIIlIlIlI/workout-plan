@@ -168,6 +168,28 @@ function Split() {
                 ) : (
                   <></>
                 )}
+
+                <div className={`${scssObj.baseClass}__splits`}>
+                  <GetAccordianated
+                    headerClassName={`${scssObj.baseClass}__warmup-variation-title`}
+                    bgColor='#dcf6e1'
+                    headerTitle={
+                      <div className={`${scssObj.baseClass}__vartiation-title`}>
+                        Stretching variations
+                      </div>
+                    }
+                  >
+                    <>
+                      {routine.stretching.map((variation) =>
+                        getVariationPrinted(
+                          variation,
+                          `${scssObj.baseClass}__warmup-variation-inner-accordian`,
+                          '#dcf6e1'
+                        )
+                      )}
+                    </>
+                  </GetAccordianated>
+                </div>
               </AccordionDetails>
             </Accordion>
           </div>
