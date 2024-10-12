@@ -15,13 +15,33 @@ const getSingleExcerciseTextPrinted = (exercise: Exercise) => {
   };
 };
 
+const GetAccordianated = ({
+  children,
+  headerTitle,
+}: {
+  children: React.JSX.Element;
+  headerTitle: React.JSX.Element;
+}) => {
+  return (
+    <div>
+      <Accordion className={`${scssObj.baseClass}__split-summary`}>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          {headerTitle}
+        </AccordionSummary>
+
+        <AccordionDetails>{children}</AccordionDetails>
+      </Accordion>
+    </div>
+  );
+};
+
 const getVariationPrinted = (variation: Variation) => {
   const currentVariation = variation.currentVariation;
   const olderVarions = variation.olderVariation || [];
   return (
     <div>
       <Accordion className={`${scssObj.baseClass}__acc-summary`}>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+        <AccordionSummary disabled={!olderVarions.length}>
           <div className={`${scssObj.baseClass}__current-excersice`}>
             <div className={`${scssObj.baseClass}__excersice-name`}>
               {getSingleExcerciseTextPrinted(currentVariation).excersiceName}
@@ -65,13 +85,19 @@ function Split() {
               </AccordionSummary>
 
               <AccordionDetails>
-                <div className={`${scssObj.baseClass}__vartiation-title`}>
-                  Warm-up variations
-                </div>
-
-                {routine.warmUp.map((variation) =>
-                  getVariationPrinted(variation)
-                )}
+                <GetAccordianated
+                  headerTitle={
+                    <div className={`${scssObj.baseClass}__vartiation-title`}>
+                      Warm-up variations
+                    </div>
+                  }
+                >
+                  <>
+                    {routine.warmUp.map((variation) =>
+                      getVariationPrinted(variation)
+                    )}
+                  </>
+                </GetAccordianated>
               </AccordionDetails>
             </Accordion>
           </div>
