@@ -45,17 +45,17 @@ $base-class: split;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } 
 
-    &__acc-summary {
+    &__warmup-variation-title {
         .MuiButtonBase-root {
-            background-color: #6e07f3 !important;
+            background-color: #06b738 !important;
             border-width: 1px;
             border-style: solid;
             border-color: #d9d8d8;
         }
     }
-
+    
     &__split-summary {
         .MuiButtonBase-root {
             background-color: #147d88;
