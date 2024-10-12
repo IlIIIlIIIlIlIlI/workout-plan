@@ -17,10 +17,12 @@ const getSingleExcerciseTextPrinted = (exercise: Exercise) => {
 
 const GetAccordianated = ({
   headerClassName,
+  bgColor,
   children,
   headerTitle,
 }: {
   headerClassName: string;
+  bgColor: string;
   children: React.JSX.Element;
   headerTitle: React.JSX.Element;
 }) => {
@@ -31,7 +33,9 @@ const GetAccordianated = ({
           {headerTitle}
         </AccordionSummary>
 
-        <AccordionDetails>{children}</AccordionDetails>
+        <AccordionDetails style={{ backgroundColor: bgColor }}>
+          {children}
+        </AccordionDetails>
       </Accordion>
     </div>
   );
@@ -43,7 +47,9 @@ const getVariationPrinted = (variation: Variation, className: string) => {
   return (
     <div>
       <Accordion className={className}>
-        <AccordionSummary disabled={!olderVarions.length}>
+        <AccordionSummary
+          expandIcon={olderVarions.length ? <ExpandMoreIcon /> : undefined}
+        >
           <div className={`${scssObj.baseClass}__current-excersice`}>
             <div className={`${scssObj.baseClass}__excersice-name`}>
               {getSingleExcerciseTextPrinted(currentVariation).excersiceName}
@@ -89,6 +95,7 @@ function Split() {
               <AccordionDetails>
                 <GetAccordianated
                   headerClassName={`${scssObj.baseClass}__warmup-variation-title`}
+                  bgColor=''
                   headerTitle={
                     <div className={`${scssObj.baseClass}__vartiation-title`}>
                       Warm-up variations
