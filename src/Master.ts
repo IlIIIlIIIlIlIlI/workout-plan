@@ -1348,6 +1348,38 @@ export const backAndBiceps: Workout = {
       ],
     },
 
+    {
+      name: 'Triceps',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Tricep Cable Pulldown',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+      ],
+    },
+
+    {
+      name: 'Chest',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Machine Chest Press',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+      ],
+    },
+
     foreArmsExcercise,
   ],
 
