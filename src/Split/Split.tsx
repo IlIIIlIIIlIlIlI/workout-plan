@@ -141,27 +141,33 @@ function Split() {
                   </GetAccordianated>
                 </div>
 
-                <div className={`${scssObj.baseClass}__splits`}>
-                  <GetAccordianated
-                    headerClassName={`${scssObj.baseClass}__postworkout-variation-title`}
-                    bgColor='#fcfada'
-                    headerTitle={
-                      <div className={`${scssObj.baseClass}__vartiation-title`}>
-                        Post-Workout Variations
-                      </div>
-                    }
-                  >
-                    <>
-                      {routine.postWorkout.map((variation) =>
-                        getVariationPrinted(
-                          variation,
-                          `${scssObj.baseClass}__postworkout-variation-inner-accordian`,
-                          '#fcfada'
-                        )
-                      )}
-                    </>
-                  </GetAccordianated>
-                </div>
+                {routine.postWorkout.length ? (
+                  <div className={`${scssObj.baseClass}__splits`}>
+                    <GetAccordianated
+                      headerClassName={`${scssObj.baseClass}__postworkout-variation-title`}
+                      bgColor='#fcfada'
+                      headerTitle={
+                        <div
+                          className={`${scssObj.baseClass}__vartiation-title`}
+                        >
+                          Post-Workout Variations
+                        </div>
+                      }
+                    >
+                      <>
+                        {routine.postWorkout.map((variation) =>
+                          getVariationPrinted(
+                            variation,
+                            `${scssObj.baseClass}__postworkout-variation-inner-accordian`,
+                            '#fcfada'
+                          )
+                        )}
+                      </>
+                    </GetAccordianated>
+                  </div>
+                ) : (
+                  <></>
+                )}
               </AccordionDetails>
             </Accordion>
           </div>
