@@ -81,6 +81,24 @@ $base-class: split;
             border-color: #d9d8d8;
         }
     }
+
+    &__postworkout-variation-title {
+        .MuiButtonBase-root {
+            background-color: #f3ed6e !important;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #d9d8d8;
+        }
+    }
+
+    &__postworkout-variation-inner-accordian{
+        .MuiButtonBase-root {
+            background-color: #f6f192 !important;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #d9d8d8;
+        }
+    }
     
     &__split-summary {
         .MuiButtonBase-root {
