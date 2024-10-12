@@ -224,6 +224,44 @@ export const postWorkOut = (isActive: boolean): Variation[] => {
 const endNote =
   'Bar crossing(monkey crossing) was ealier practiced instead of Pull-ups and chin-ups. (Pull-ups and chin-ups are optional on legs and cardio day)';
 
+const foreArmsExcercise: Split = {
+  name: 'Forearms',
+  variations: [
+    {
+      currentVariation: {
+        exerciseName: 'Soupinated Towards Inner Body Curl',
+        repeatition: {
+          min: 14,
+          max: 15,
+        },
+        set: 2,
+      },
+    },
+
+    {
+      currentVariation: {
+        exerciseName: 'Soupinated Upper Body Curl',
+        repeatition: {
+          min: 14,
+          max: 15,
+        },
+        set: 2,
+      },
+    },
+
+    {
+      currentVariation: {
+        exerciseName: 'Mugg Holding Upper Body Curl',
+        repeatition: {
+          min: 14,
+          max: 15,
+        },
+        set: 2,
+      },
+    },
+  ],
+};
+
 export const pushUps: Workout = {
   name: 'Push-ups day',
   warmUp: currentWarmUp,
@@ -319,9 +357,30 @@ export const pushUps: Workout = {
       variations: [
         {
           currentVariation: {
-            exerciseName: 'Push-Ups On Elevated Toes Narrow Width',
+            exerciseName: 'Tricep Cable Pulldown',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName:
+              'Push-Ups On Grounded Toes Narrow Width, (Only 2 Sets in Gym)',
             repeatition: { min: 15 },
-            set: 6,
+            set: 3,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName:
+              'Push-Ups On Elevated Toes Narrow Width, (Only 2 Sets in Gym)',
+            repeatition: { min: 15 },
+            set: 3,
           },
         },
       ],
@@ -332,13 +391,36 @@ export const pushUps: Workout = {
       variations: [
         {
           currentVariation: {
-            exerciseName: 'Push-Ups On Elevated Toes Broad Width',
+            exerciseName: 'Machine Chest Press',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName:
+              'Push-Ups On Grounded Toes Broad Width, (Only 2 Sets in Gym)',
             repeatition: { min: 15 },
-            set: 6,
+            set: 3,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName:
+              'Push-Ups On Elevated Toes Broad Width, (Only 4 Sets in Gym)',
+            repeatition: { min: 15 },
+            set: 3,
           },
         },
       ],
     },
+
+    foreArmsExcercise,
   ],
 
   postWorkout: postWorkOut(true),
@@ -513,7 +595,7 @@ export const absAndCardio: Workout = {
 };
 
 export const CST: Workout = {
-  name: 'Chest, Shoulder, Triceps',
+  name: 'Chest, Shoulder, Triceps, Back, Biceps',
   warmUp: currentWarmUp,
 
   preWorkout: [
@@ -584,6 +666,17 @@ export const CST: Workout = {
         {
           currentVariation: {
             exerciseName: 'Decline Bench Press',
+            repeatition: {
+              min: 14,
+              max: 15,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Machine Chest Press',
             repeatition: {
               min: 14,
               max: 15,
@@ -679,6 +772,62 @@ export const CST: Workout = {
         },
       ],
     },
+
+    {
+      name: 'Back',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Seated Row',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Narrow Grip Lat Pull Down',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 2,
+          },
+        },
+
+        {
+          currentVariation: {
+            exerciseName: 'Broad Grip Lat Pull Down (Cable with bar)',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 1,
+          },
+        },
+      ],
+    },
+
+    {
+      name: 'Biceps',
+      variations: [
+        {
+          currentVariation: {
+            exerciseName: 'Preacher Curl',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 2,
+          },
+        },
+      ],
+    },
+
+    foreArmsExcercise,
   ],
 
   postWorkout: postWorkOut(true),
@@ -754,13 +903,23 @@ export const legsAndAbs: Workout = {
 
         {
           currentVariation: {
-            exerciseName: 'Goblet Squats',
+            exerciseName: 'Front Squats With Barbell',
             repeatition: {
               min: 14,
               max: 15,
             },
             set: 2,
           },
+          olderVariation: [
+            {
+              exerciseName: 'Goblet Squats With Dumbell',
+              repeatition: {
+                min: 14,
+                max: 15,
+              },
+              set: 2,
+            },
+          ],
         },
 
         {
@@ -850,6 +1009,17 @@ export const legsAndAbs: Workout = {
 
         {
           currentVariation: {
+            exerciseName: 'Leg Extension Drop Set',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 1,
+          },
+        },
+
+        {
+          currentVariation: {
             exerciseName: 'Leg Curl',
             repeatition: {
               min: 14,
@@ -867,6 +1037,16 @@ export const legsAndAbs: Workout = {
               set: 3,
             },
           ],
+        },
+        {
+          currentVariation: {
+            exerciseName: 'Leg Curl Drop Set',
+            repeatition: {
+              min: 14,
+              max: 16,
+            },
+            set: 1,
+          },
         },
       ],
     },
@@ -1167,6 +1347,8 @@ export const backAndBiceps: Workout = {
         },
       ],
     },
+
+    foreArmsExcercise,
   ],
 
   postWorkout: postWorkOut(true),
