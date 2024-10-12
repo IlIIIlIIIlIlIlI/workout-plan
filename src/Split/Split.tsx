@@ -190,6 +190,8 @@ function Split() {
                     </>
                   </GetAccordianated>
                 </div>
+
+                <div>{routine.note}</div>
               </AccordionDetails>
             </Accordion>
           </div>
