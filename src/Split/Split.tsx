@@ -41,7 +41,11 @@ const GetAccordianated = ({
   );
 };
 
-const getVariationPrinted = (variation: Variation, className: string) => {
+const getVariationPrinted = (
+  variation: Variation,
+  className: string,
+  accordianDetailsBGColour: string
+) => {
   const currentVariation = variation.currentVariation;
   const olderVarions = variation.olderVariation || [];
   return (
@@ -61,9 +65,11 @@ const getVariationPrinted = (variation: Variation, className: string) => {
         </AccordionSummary>
 
         {olderVarions.length ? (
-          <AccordionDetails>
+          <AccordionDetails
+            style={{ backgroundColor: accordianDetailsBGColour }}
+          >
             {olderVarions.map((variation) => (
-              <div>
+              <div className={`${scssObj.baseClass}__details-older-excercise`}>
                 <div>
                   {getSingleExcerciseTextPrinted(variation).excersiceName}
                 </div>
@@ -95,7 +101,7 @@ function Split() {
               <AccordionDetails>
                 <GetAccordianated
                   headerClassName={`${scssObj.baseClass}__warmup-variation-title`}
-                  bgColor=''
+                  bgColor='#dcf6e1'
                   headerTitle={
                     <div className={`${scssObj.baseClass}__vartiation-title`}>
                       Warm-up variations
@@ -106,7 +112,8 @@ function Split() {
                     {routine.warmUp.map((variation) =>
                       getVariationPrinted(
                         variation,
-                        `${scssObj.baseClass}__warmup-variation-title`
+                        `${scssObj.baseClass}__warmup-variation-title`,
+                        '#dcf6e1'
                       )
                     )}
                   </>
