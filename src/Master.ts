@@ -412,7 +412,7 @@ export const pushUps: Workout = {
         {
           currentVariation: {
             exerciseName:
-              'Push-Ups On Elevated Toes Broad Width, (Only 4 Sets in Gym)',
+              'Push-Ups On Elevated Toes Broad Width, (Only 2 Sets in Gym)',
             repeatition: { min: 15 },
             set: 3,
           },
