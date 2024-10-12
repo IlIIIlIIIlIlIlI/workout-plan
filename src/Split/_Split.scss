@@ -44,7 +44,7 @@ $base-class: split;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    } 
+    }
 
     &__warmup-variation-title {
         .MuiButtonBase-root {
@@ -73,7 +73,7 @@ $base-class: split;
         }
     }
 
-    &__preworkout-variation-inner-accordian{
+    &__preworkout-variation-inner-accordian {
         .MuiButtonBase-root {
             background-color: #f6daa6 !important;
             border-width: 1px;
@@ -91,7 +91,7 @@ $base-class: split;
         }
     }
 
-    &__postworkout-variation-inner-accordian{
+    &__postworkout-variation-inner-accordian {
         .MuiButtonBase-root {
             background-color: #f6f192 !important;
             border-width: 1px;
@@ -109,7 +109,7 @@ $base-class: split;
         }
     }
 
-    &__workout-variation-inner-accordian{
+    &__workout-variation-inner-accordian {
         .MuiButtonBase-root {
             background-color: #fdd0bf !important;
             border-width: 1px;
@@ -117,7 +117,7 @@ $base-class: split;
             border-color: #d9d8d8;
         }
     }
-    
+
     &__split-summary {
         .MuiButtonBase-root {
             background-color: #147d88;
@@ -127,8 +127,12 @@ $base-class: split;
         }
     }
 
+    &__strike-through {
+        text-decoration: line-through;
+    }
+
     &__details-older-excercise {
-       margin: 10px 0px;
+        margin: 10px 0px;
     }
 
     &__splits {

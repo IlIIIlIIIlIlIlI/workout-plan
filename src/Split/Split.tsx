@@ -55,10 +55,24 @@ const getVariationPrinted = (
           expandIcon={olderVarions.length ? <ExpandMoreIcon /> : undefined}
         >
           <div className={`${scssObj.baseClass}__current-excersice`}>
-            <div>
+            <div
+              className={
+                currentVariation.isInactive
+                  ? `${scssObj.baseClass}__strike-through`
+                  : ''
+              }
+            >
               {getSingleExcerciseTextPrinted(currentVariation).excersiceName}
             </div>
-            <div>{getSingleExcerciseTextPrinted(currentVariation).perform}</div>
+            <div
+              className={
+                currentVariation.isInactive
+                  ? `${scssObj.baseClass}__strike-through`
+                  : ''
+              }
+            >
+              {getSingleExcerciseTextPrinted(currentVariation).perform}
+            </div>
           </div>
         </AccordionSummary>
 
