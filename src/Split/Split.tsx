@@ -97,25 +97,27 @@ function Split() {
               </AccordionSummary>
 
               <AccordionDetails>
-                <GetAccordianated
-                  headerClassName={`${scssObj.baseClass}__warmup-variation-title`}
-                  bgColor='#dcf6e1'
-                  headerTitle={
-                    <div className={`${scssObj.baseClass}__vartiation-title`}>
-                      Warm-up variations
-                    </div>
-                  }
-                >
-                  <>
-                    {routine.warmUp.map((variation) =>
-                      getVariationPrinted(
-                        variation,
-                        `${scssObj.baseClass}__warmup-variation-inner-accordian`,
-                        '#dcf6e1'
-                      )
-                    )}
-                  </>
-                </GetAccordianated>
+                <div className={`${scssObj.baseClass}__splits`}>
+                  <GetAccordianated
+                    headerClassName={`${scssObj.baseClass}__warmup-variation-title`}
+                    bgColor='#dcf6e1'
+                    headerTitle={
+                      <div className={`${scssObj.baseClass}__vartiation-title`}>
+                        Warm-up variations
+                      </div>
+                    }
+                  >
+                    <>
+                      {routine.warmUp.map((variation) =>
+                        getVariationPrinted(
+                          variation,
+                          `${scssObj.baseClass}__warmup-variation-inner-accordian`,
+                          '#dcf6e1'
+                        )
+                      )}
+                    </>
+                  </GetAccordianated>
+                </div>
               </AccordionDetails>
             </Accordion>
           </div>
